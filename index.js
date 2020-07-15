@@ -64,7 +64,7 @@ member.roles.add("724986317921976392");
       .setImage("https://i.imgur.com/xAYl58g.gif")
       .setDescription(`**${member.user}**, bem-vindo(a) a **${guild.name}**! Atualmente estamos com **${member.guild.memberCount} membros**, divirta-se conosco! :heart:`)
       .setThumbnail(member.user.displayAvatarURL({ dynamic: true, format: "png", size: 1024 }))
-      .setFooter("Rede Monster")
+      .setFooter("FullPvPImperial")
       .setTimestamp();
 
     channel.send(embed);
@@ -74,7 +74,7 @@ member.roles.add("724986317921976392");
 
 client.on("ready", () => {
   let activities = [
-      `${config.prefix}Rede Monster`,
+      `${config.prefix}FullPvPImperial`,
     ],
     i = 0;
   setInterval( () => client.user.setActivity(`${activities[i++ % activities.length]}`, {
@@ -101,7 +101,7 @@ client.on("guildMemberRemove", async (member) => {
       .setImage("https://i.imgur.com/PsjKs3P.gif")
       .setDescription(`**${member.user.username}**, saiu do servidor! :broken_heart:`)
       .setThumbnail(member.user.displayAvatarURL({ dynamic: true, format: "png", size: 1024 }))
-      .setFooter("Rede Monster")
+      .setFooter("FullPvPImperial")
       .setTimestamp();
 
     channel.send(embed);
