@@ -16,7 +16,7 @@ module.exports.run = async (client, message, args) => {
             command = client.commands.cache.get(command);
             var SHembed = new Discord.MessageEmbed()
             .setColor("cyan")
-            .setAuthor(`REDE MONSTER`, message.guild.iconURL)
+            .setAuthor(`FullPvP Imperial`, message.guild.iconURL)
             .setThumbnail(client.user.displayAvatarURL)
             .setDescription(`The bot prefix is: ${prefix}\n\n**Command:** ${command.config.name}\n**Description:** ${command.config.description || "No Description"}\n**Usage:** ${command.config.usage || "No Usage"}\n**Accessable by:** ${command.config.accessableby || "Members"}\n**Aliases:** ${command.config.noalias || command.config.aliases}`)
             message.channel.send(SHembed);
@@ -26,22 +26,22 @@ module.exports.run = async (client, message, args) => {
         message.delete();
         
         let embed = new Discord.MessageEmbed()
-        .setAuthor(`🌀Comandos Dos Staffs Rede Monster!🌀`, message.guild.iconURL)
+        .setAuthor(`🌀Comandos Dos Staffs FullPvP Imperial!🌀`, message.guild.iconURL)
         .setColor("redlight")
         .setDescription(`${message.author.username} ***Mandei no seu privado <3!***`)
 
         let Sembed = new Discord.MessageEmbed()
         .setColor("cyan")
-        .setAuthor(`🌠REDE MONSTER🌠`, message.guild.iconURL)
+        .setAuthor(`🌠FullPvP Imperial🌠`, message.guild.iconURL)
         .setThumbnail(client.user.displayAvatarURL)
         .setTimestamp()
         .setDescription(`***Esses são meus comandos atuais!***\n**Meu prefix é: -**`)
-        .addField(`Comando#1:`, "``-Ban <@usuario> <motivo>``")
-        .addField(`Comando#2:`, "``-Kick <@usuario> <motivo>``")
-        .addField(`Comando#3:`, "``-Limpar <1 a 99> (para limpar mensagens)``")
-        .addField(`Comando#4:`, "``-Anuncio (siga os passos)``")
-        .addField(`Comando#5:`, "``-Aviso <@usuario> <msg de aviso para o usuario>``")
-        .setFooter("REDE MONSTER", client.user.displayAvatarURL)
+        .addField(`Comando#1:`, "``f-Ban <@usuario> <motivo>``")
+        .addField(`Comando#2:`, "``f-Kick <@usuario> <motivo>``")
+        .addField(`Comando#3:`, "``f-Limpar <1 a 99> (para limpar mensagens)``")
+        .addField(`Comando#4:`, "``f-Anuncio (siga os passos)``")
+        .addField(`Comando#5:`, "``f-Aviso <@usuario> <msg de aviso para o usuario>``")
+        .setFooter("FullPvP Imperial", client.user.displayAvatarURL)
         message.author.send(Sembed)
     }
 }
